@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CCC7A232E6208E200439689 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCC7A1D2E6208E200439689 /* Preview Assets.xcassets */; };
+		2CCC7A242E6208E200439689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCC7A1F2E6208E200439689 /* Assets.xcassets */; };
+		2CCC7A252E6208E200439689 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A202E6208E200439689 /* ContentView.swift */; };
+		2CCC7A262E6208E200439689 /* WayGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A212E6208E200439689 /* WayGoApp.swift */; };
+		2CCC7A292E62090E00439689 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A282E62090900439689 /* APIService.swift */; };
+		2CCC7A2E2E620C8900439689 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A2D2E620C8700439689 /* Colors.swift */; };
+		2CCC7A312E620CA400439689 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A302E620CA200439689 /* Typography.swift */; };
+		2CCC7A332E620CBA00439689 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A322E620CB800439689 /* AuthModels.swift */; };
+		2CCC7A352E620CCE00439689 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC7A342E620CCC00439689 /* AuthService.swift */; };
+		2CFF68C42E620D1E00466242 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68C32E620D1B00466242 /* SessionStore.swift */; };
+		2CFF68C62E620D3300466242 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68C52E620D3100466242 /* AuthView.swift */; };
+		2CFF68C82E620D5300466242 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68C72E620D5100466242 /* Homescreen.swift */; };
+		2CFF68CA2E63816500466242 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68C92E63816200466242 /* Country.swift */; };
+		2CFF68CC2E63818D00466242 /* TravelPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68CB2E63818B00466242 /* TravelPackage.swift */; };
+		2CFF68CE2E63819E00466242 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68CD2E63819D00466242 /* DemoData.swift */; };
+		2CFF68D12E6381EE00466242 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68D02E6381EC00466242 /* CustomTabBar.swift */; };
+		2CFF68D42E63822600466242 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68D32E63822000466242 /* CountryPickerView.swift */; };
+		2CFF68D82E63837E00466242 /* PackageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68D72E63837D00466242 /* PackageListView.swift */; };
+		2CFF68DA2E63839500466242 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68D92E63839300466242 /* MainAppView.swift */; };
+		2CFF68DE2E638FE400466242 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68DD2E638FE200466242 /* Place.swift */; };
+		2CFF68E02E638FF400466242 /* DemoPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68DF2E638FF400466242 /* DemoPlaces.swift */; };
+		2CFF68E32E63905F00466242 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68E22E63905E00466242 /* HomeView.swift */; };
+		2CFF68E62E63909400466242 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68E52E63909300466242 /* PlaceDetailView.swift */; };
+		2CFF68E82E63926D00466242 /* PlaceCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68E72E63926C00466242 /* PlaceCarouselView.swift */; };
+		2CFF68EA2E64265900466242 /* PackageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68E92E64265700466242 /* PackageDetailView.swift */; };
+		2CFF68ED2E642DAD00466242 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68EC2E642DAC00466242 /* Cart.swift */; };
+		2CFF68EF2E642DF600466242 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68EE2E642DF500466242 /* Flight.swift */; };
+		2CFF68F22E642E1F00466242 /* FlightsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68F12E642E1E00466242 /* FlightsSearchView.swift */; };
+		2CFF68F52E642E3A00466242 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68F42E642E3900466242 /* CartView.swift */; };
+		2CFF68F72E6432F300466242 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68F62E6432F100466242 /* Train.swift */; };
+		2CFF68F92E64330200466242 /* Stay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68F82E64330000466242 /* Stay.swift */; };
+		2CFF68FB2E64331300466242 /* CabRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68FA2E64330C00466242 /* CabRide.swift */; };
+		2CFF68FE2E64334600466242 /* BookingHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68FD2E64334500466242 /* BookingHubView.swift */; };
+		2CFF69002E64335E00466242 /* TrainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF68FF2E64335B00466242 /* TrainSearchView.swift */; };
+		2CFF69022E64337000466242 /* StaySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF69012E64336F00466242 /* StaySearchView.swift */; };
+		2CFF69042E64338100466242 /* CabSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF69032E64338000466242 /* CabSearchView.swift */; };
+		2CFF69072E643EEE00466242 /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF69062E643EEC00466242 /* StripeService.swift */; };
+		2CFF69092E64416400466242 /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69082E64416400466242 /* Stripe */; };
+		2CFF690B2E64416400466242 /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF690A2E64416400466242 /* StripeApplePay */; };
+		2CFF690D2E64416400466242 /* StripeCardScan in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF690C2E64416400466242 /* StripeCardScan */; };
+		2CFF690F2E64416400466242 /* StripeConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF690E2E64416400466242 /* StripeConnect */; };
+		2CFF69112E64416400466242 /* StripeFinancialConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69102E64416400466242 /* StripeFinancialConnections */; };
+		2CFF69132E64416400466242 /* StripeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69122E64416400466242 /* StripeIdentity */; };
+		2CFF69152E64416400466242 /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69142E64416400466242 /* StripePaymentSheet */; };
+		2CFF69172E64416400466242 /* StripePayments in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69162E64416400466242 /* StripePayments */; };
+		2CFF69192E64416400466242 /* StripePaymentsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF69182E64416400466242 /* StripePaymentsUI */; };
+		2CFF691B2E64456A00466242 /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF691A2E64456900466242 /* TabBarState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C9935552E5AC62A00D78DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C99353C2E5AC62800D78DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9935432E5AC62800D78DEA;
+			remoteInfo = WayGo;
+		};
+		2C99355F2E5AC62A00D78DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C99353C2E5AC62800D78DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9935432E5AC62800D78DEA;
+			remoteInfo = WayGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C9935442E5AC62800D78DEA /* WayGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9935542E5AC62A00D78DEA /* WayGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C99355E2E5AC62A00D78DEA /* WayGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCC7A1D2E6208E200439689 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CCC7A1F2E6208E200439689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CCC7A202E6208E200439689 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CCC7A212E6208E200439689 /* WayGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayGoApp.swift; sourceTree = "<group>"; };
+		2CCC7A282E62090900439689 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2CCC7A2D2E620C8700439689 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2CCC7A302E620CA200439689 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		2CCC7A322E620CB800439689 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		2CCC7A342E620CCC00439689 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2CFF68C32E620D1B00466242 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		2CFF68C52E620D3100466242 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		2CFF68C72E620D5100466242 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		2CFF68C92E63816200466242 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		2CFF68CB2E63818B00466242 /* TravelPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackage.swift; sourceTree = "<group>"; };
+		2CFF68CD2E63819D00466242 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		2CFF68D02E6381EC00466242 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		2CFF68D32E63822000466242 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		2CFF68D72E63837D00466242 /* PackageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageListView.swift; sourceTree = "<group>"; };
+		2CFF68D92E63839300466242 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		2CFF68DD2E638FE200466242 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2CFF68DF2E638FF400466242 /* DemoPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPlaces.swift; sourceTree = "<group>"; };
+		2CFF68E22E63905E00466242 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2CFF68E52E63909300466242 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		2CFF68E72E63926C00466242 /* PlaceCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCarouselView.swift; sourceTree = "<group>"; };
+		2CFF68E92E64265700466242 /* PackageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailView.swift; sourceTree = "<group>"; };
+		2CFF68EC2E642DAC00466242 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		2CFF68EE2E642DF500466242 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		2CFF68F12E642E1E00466242 /* FlightsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsSearchView.swift; sourceTree = "<group>"; };
+		2CFF68F42E642E3900466242 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		2CFF68F62E6432F100466242 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		2CFF68F82E64330000466242 /* Stay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stay.swift; sourceTree = "<group>"; };
+		2CFF68FA2E64330C00466242 /* CabRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabRide.swift; sourceTree = "<group>"; };
+		2CFF68FD2E64334500466242 /* BookingHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHubView.swift; sourceTree = "<group>"; };
+		2CFF68FF2E64335B00466242 /* TrainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainSearchView.swift; sourceTree = "<group>"; };
+		2CFF69012E64336F00466242 /* StaySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaySearchView.swift; sourceTree = "<group>"; };
+		2CFF69032E64338000466242 /* CabSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabSearchView.swift; sourceTree = "<group>"; };
+		2CFF69062E643EEC00466242 /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
+		2CFF691A2E64456900466242 /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2C9935572E5AC62A00D78DEA /* WayGoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WayGoTests;
+			sourceTree = "<group>";
+		};
+		2C9935612E5AC62A00D78DEA /* WayGoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WayGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C9935412E5AC62800D78DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFF69112E64416400466242 /* StripeFinancialConnections in Frameworks */,
+				2CFF690D2E64416400466242 /* StripeCardScan in Frameworks */,
+				2CFF69092E64416400466242 /* Stripe in Frameworks */,
+				2CFF69132E64416400466242 /* StripeIdentity in Frameworks */,
+				2CFF69152E64416400466242 /* StripePaymentSheet in Frameworks */,
+				2CFF690F2E64416400466242 /* StripeConnect in Frameworks */,
+				2CFF69192E64416400466242 /* StripePaymentsUI in Frameworks */,
+				2CFF69172E64416400466242 /* StripePayments in Frameworks */,
+				2CFF690B2E64416400466242 /* StripeApplePay in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9935512E5AC62A00D78DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C99355B2E5AC62A00D78DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C99353B2E5AC62800D78DEA = {
+			isa = PBXGroup;
+			children = (
+				2CCC7A222E6208E200439689 /* WayGo */,
+				2C9935572E5AC62A00D78DEA /* WayGoTests */,
+				2C9935612E5AC62A00D78DEA /* WayGoUITests */,
+				2C9935452E5AC62800D78DEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C9935452E5AC62800D78DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C9935442E5AC62800D78DEA /* WayGo.app */,
+				2C9935542E5AC62A00D78DEA /* WayGoTests.xctest */,
+				2C99355E2E5AC62A00D78DEA /* WayGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CCC7A1E2E6208E200439689 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CCC7A1D2E6208E200439689 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CCC7A222E6208E200439689 /* WayGo */ = {
+			isa = PBXGroup;
+			children = (
+				2CCC7A2C2E620C6B00439689 /* Views */,
+				2CCC7A2B2E620C6200439689 /* Theme */,
+				2CCC7A2A2E620C4F00439689 /* Models */,
+				2CCC7A272E6208EF00439689 /* Services */,
+				2CCC7A1E2E6208E200439689 /* Preview Content */,
+				2CCC7A1F2E6208E200439689 /* Assets.xcassets */,
+				2CCC7A212E6208E200439689 /* WayGoApp.swift */,
+			);
+			path = WayGo;
+			sourceTree = "<group>";
+		};
+		2CCC7A272E6208EF00439689 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF69062E643EEC00466242 /* StripeService.swift */,
+				2CCC7A342E620CCC00439689 /* AuthService.swift */,
+				2CCC7A282E62090900439689 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CCC7A2A2E620C4F00439689 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68FA2E64330C00466242 /* CabRide.swift */,
+				2CFF68F82E64330000466242 /* Stay.swift */,
+				2CFF68F62E6432F100466242 /* Train.swift */,
+				2CFF68EE2E642DF500466242 /* Flight.swift */,
+				2CFF68EC2E642DAC00466242 /* Cart.swift */,
+				2CFF68DF2E638FF400466242 /* DemoPlaces.swift */,
+				2CFF68DD2E638FE200466242 /* Place.swift */,
+				2CFF68CD2E63819D00466242 /* DemoData.swift */,
+				2CFF68CB2E63818B00466242 /* TravelPackage.swift */,
+				2CFF68C92E63816200466242 /* Country.swift */,
+				2CFF68C32E620D1B00466242 /* SessionStore.swift */,
+				2CCC7A322E620CB800439689 /* AuthModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CCC7A2B2E620C6200439689 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2CCC7A302E620CA200439689 /* Typography.swift */,
+				2CCC7A2D2E620C8700439689 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2CCC7A2C2E620C6B00439689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68FC2E64332600466242 /* Booking */,
+				2CFF68F32E642E3300466242 /* Cart */,
+				2CFF68F02E642E0D00466242 /* Tickets */,
+				2CFF68E42E63908300466242 /* Place */,
+				2CFF68D92E63839300466242 /* MainAppView.swift */,
+				2CFF68D52E63836300466242 /* Packages */,
+				2CFF68CF2E6381DE00466242 /* Components */,
+				2CFF68C72E620D5100466242 /* Homescreen.swift */,
+				2CFF68C52E620D3100466242 /* AuthView.swift */,
+				2CCC7A202E6208E200439689 /* ContentView.swift */,
+				2CFF68D22E63821600466242 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CFF68CF2E6381DE00466242 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF691C2E64456F00466242 /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2CFF68D22E63821600466242 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68E72E63926C00466242 /* PlaceCarouselView.swift */,
+				2CFF68E22E63905E00466242 /* HomeView.swift */,
+				2CFF68D32E63822000466242 /* CountryPickerView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2CFF68D52E63836300466242 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68E92E64265700466242 /* PackageDetailView.swift */,
+				2CFF68D72E63837D00466242 /* PackageListView.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		2CFF68E42E63908300466242 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68E52E63909300466242 /* PlaceDetailView.swift */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		2CFF68F02E642E0D00466242 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68F12E642E1E00466242 /* FlightsSearchView.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		2CFF68F32E642E3300466242 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF68F42E642E3900466242 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		2CFF68FC2E64332600466242 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF69032E64338000466242 /* CabSearchView.swift */,
+				2CFF69012E64336F00466242 /* StaySearchView.swift */,
+				2CFF68FF2E64335B00466242 /* TrainSearchView.swift */,
+				2CFF68FD2E64334500466242 /* BookingHubView.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		2CFF691C2E64456F00466242 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF691A2E64456900466242 /* TabBarState.swift */,
+				2CFF68D02E6381EC00466242 /* CustomTabBar.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C9935432E5AC62800D78DEA /* WayGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9935682E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGo" */;
+			buildPhases = (
+				2C9935402E5AC62800D78DEA /* Sources */,
+				2C9935412E5AC62800D78DEA /* Frameworks */,
+				2C9935422E5AC62800D78DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WayGo;
+			packageProductDependencies = (
+				2CFF69082E64416400466242 /* Stripe */,
+				2CFF690A2E64416400466242 /* StripeApplePay */,
+				2CFF690C2E64416400466242 /* StripeCardScan */,
+				2CFF690E2E64416400466242 /* StripeConnect */,
+				2CFF69102E64416400466242 /* StripeFinancialConnections */,
+				2CFF69122E64416400466242 /* StripeIdentity */,
+				2CFF69142E64416400466242 /* StripePaymentSheet */,
+				2CFF69162E64416400466242 /* StripePayments */,
+				2CFF69182E64416400466242 /* StripePaymentsUI */,
+			);
+			productName = WayGo;
+			productReference = 2C9935442E5AC62800D78DEA /* WayGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C9935532E5AC62A00D78DEA /* WayGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C99356B2E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGoTests" */;
+			buildPhases = (
+				2C9935502E5AC62A00D78DEA /* Sources */,
+				2C9935512E5AC62A00D78DEA /* Frameworks */,
+				2C9935522E5AC62A00D78DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9935562E5AC62A00D78DEA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C9935572E5AC62A00D78DEA /* WayGoTests */,
+			);
+			name = WayGoTests;
+			packageProductDependencies = (
+			);
+			productName = WayGoTests;
+			productReference = 2C9935542E5AC62A00D78DEA /* WayGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C99355D2E5AC62A00D78DEA /* WayGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C99356E2E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGoUITests" */;
+			buildPhases = (
+				2C99355A2E5AC62A00D78DEA /* Sources */,
+				2C99355B2E5AC62A00D78DEA /* Frameworks */,
+				2C99355C2E5AC62A00D78DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9935602E5AC62A00D78DEA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C9935612E5AC62A00D78DEA /* WayGoUITests */,
+			);
+			name = WayGoUITests;
+			packageProductDependencies = (
+			);
+			productName = WayGoUITests;
+			productReference = 2C99355E2E5AC62A00D78DEA /* WayGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C99353C2E5AC62800D78DEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2C9935432E5AC62800D78DEA = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2C9935532E5AC62A00D78DEA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2C9935432E5AC62800D78DEA;
+					};
+					2C99355D2E5AC62A00D78DEA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2C9935432E5AC62800D78DEA;
+					};
+				};
+			};
+			buildConfigurationList = 2C99353F2E5AC62800D78DEA /* Build configuration list for PBXProject "WayGo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C99353B2E5AC62800D78DEA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2C9935452E5AC62800D78DEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C9935432E5AC62800D78DEA /* WayGo */,
+				2C9935532E5AC62A00D78DEA /* WayGoTests */,
+				2C99355D2E5AC62A00D78DEA /* WayGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C9935422E5AC62800D78DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCC7A232E6208E200439689 /* Preview Assets.xcassets in Resources */,
+				2CCC7A242E6208E200439689 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9935522E5AC62A00D78DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C99355C2E5AC62A00D78DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C9935402E5AC62800D78DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCC7A312E620CA400439689 /* Typography.swift in Sources */,
+				2CCC7A332E620CBA00439689 /* AuthModels.swift in Sources */,
+				2CFF68D12E6381EE00466242 /* CustomTabBar.swift in Sources */,
+				2CFF68D82E63837E00466242 /* PackageListView.swift in Sources */,
+				2CFF68E62E63909400466242 /* PlaceDetailView.swift in Sources */,
+				2CFF68EA2E64265900466242 /* PackageDetailView.swift in Sources */,
+				2CFF68F22E642E1F00466242 /* FlightsSearchView.swift in Sources */,
+				2CFF68CE2E63819E00466242 /* DemoData.swift in Sources */,
+				2CFF69022E64337000466242 /* StaySearchView.swift in Sources */,
+				2CFF691B2E64456A00466242 /* TabBarState.swift in Sources */,
+				2CFF68ED2E642DAD00466242 /* Cart.swift in Sources */,
+				2CFF68F52E642E3A00466242 /* CartView.swift in Sources */,
+				2CFF69072E643EEE00466242 /* StripeService.swift in Sources */,
+				2CCC7A252E6208E200439689 /* ContentView.swift in Sources */,
+				2CFF68D42E63822600466242 /* CountryPickerView.swift in Sources */,
+				2CFF69042E64338100466242 /* CabSearchView.swift in Sources */,
+				2CFF68FB2E64331300466242 /* CabRide.swift in Sources */,
+				2CFF68E82E63926D00466242 /* PlaceCarouselView.swift in Sources */,
+				2CFF68C82E620D5300466242 /* Homescreen.swift in Sources */,
+				2CFF68CC2E63818D00466242 /* TravelPackage.swift in Sources */,
+				2CFF68EF2E642DF600466242 /* Flight.swift in Sources */,
+				2CFF68F72E6432F300466242 /* Train.swift in Sources */,
+				2CCC7A2E2E620C8900439689 /* Colors.swift in Sources */,
+				2CCC7A292E62090E00439689 /* APIService.swift in Sources */,
+				2CCC7A262E6208E200439689 /* WayGoApp.swift in Sources */,
+				2CFF68C42E620D1E00466242 /* SessionStore.swift in Sources */,
+				2CFF68E32E63905F00466242 /* HomeView.swift in Sources */,
+				2CCC7A352E620CCE00439689 /* AuthService.swift in Sources */,
+				2CFF68CA2E63816500466242 /* Country.swift in Sources */,
+				2CFF68E02E638FF400466242 /* DemoPlaces.swift in Sources */,
+				2CFF68FE2E64334600466242 /* BookingHubView.swift in Sources */,
+				2CFF68DE2E638FE400466242 /* Place.swift in Sources */,
+				2CFF68F92E64330200466242 /* Stay.swift in Sources */,
+				2CFF68C62E620D3300466242 /* AuthView.swift in Sources */,
+				2CFF68DA2E63839500466242 /* MainAppView.swift in Sources */,
+				2CFF69002E64335E00466242 /* TrainSearchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9935502E5AC62A00D78DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C99355A2E5AC62A00D78DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C9935562E5AC62A00D78DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C9935432E5AC62800D78DEA /* WayGo */;
+			targetProxy = 2C9935552E5AC62A00D78DEA /* PBXContainerItemProxy */;
+		};
+		2C9935602E5AC62A00D78DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C9935432E5AC62800D78DEA /* WayGo */;
+			targetProxy = 2C99355F2E5AC62A00D78DEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C9935662E5AC62A00D78DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C9935672E5AC62A00D78DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C9935692E5AC62A00D78DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WayGo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C99356A2E5AC62A00D78DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WayGo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C99356C2E5AC62A00D78DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WayGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WayGo";
+			};
+			name = Debug;
+		};
+		2C99356D2E5AC62A00D78DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WayGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WayGo";
+			};
+			name = Release;
+		};
+		2C99356F2E5AC62A00D78DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WayGo;
+			};
+			name = Debug;
+		};
+		2C9935702E5AC62A00D78DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautamj.WayGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WayGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C99353F2E5AC62800D78DEA /* Build configuration list for PBXProject "WayGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9935662E5AC62A00D78DEA /* Debug */,
+				2C9935672E5AC62A00D78DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9935682E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9935692E5AC62A00D78DEA /* Debug */,
+				2C99356A2E5AC62A00D78DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C99356B2E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C99356C2E5AC62A00D78DEA /* Debug */,
+				2C99356D2E5AC62A00D78DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C99356E2E5AC62A00D78DEA /* Build configuration list for PBXNativeTarget "WayGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C99356F2E5AC62A00D78DEA /* Debug */,
+				2C9935702E5AC62A00D78DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CFF69082E64416400466242 /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		2CFF690A2E64416400466242 /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+		2CFF690C2E64416400466242 /* StripeCardScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeCardScan;
+		};
+		2CFF690E2E64416400466242 /* StripeConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeConnect;
+		};
+		2CFF69102E64416400466242 /* StripeFinancialConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeFinancialConnections;
+		};
+		2CFF69122E64416400466242 /* StripeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeIdentity;
+		};
+		2CFF69142E64416400466242 /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentSheet;
+		};
+		2CFF69162E64416400466242 /* StripePayments */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePayments;
+		};
+		2CFF69182E64416400466242 /* StripePaymentsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF69052E643E3D00466242 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentsUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2C99353C2E5AC62800D78DEA /* Project object */;
+}
